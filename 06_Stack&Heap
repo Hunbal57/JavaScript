@@ -1,0 +1,25 @@
+// Stack (Primitive), Heap (non primitive)
+// Stack => Pass by value(copy is passed)
+// Heap => Pass by Reference
+
+let myYoutubename = "Apnaschooldotcom"
+
+let anotherName = myYoutubename
+anotherName = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+
+
+let userOne = {
+    email: "user@google.com",
+    id: 360012
+}
+
+let userTwo = userOne
+
+userTwo.email = "user2@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
