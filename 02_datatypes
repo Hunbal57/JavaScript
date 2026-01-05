@@ -1,0 +1,34 @@
+"use strict";  // treat all JS code as newer version, and makes
+               // our javascript less error-prone
+
+// Documentation for js: mdn & tc39
+
+// alert("hello world") // we are using Nodejs, not browser
+
+console.log(3+3)
+
+       // Code readibility should be high
+
+console.log("hunbal")
+
+let name = "ahmed"  // string
+let age = 18        // number value
+let isLoggedIn = false   // boolean
+let state = null   // Null
+let _state // undefined
+
+// data types in javascript -- primitive ds
+
+// number => 2 to power 53
+// bigInt
+// string => ""
+// boolean => 0/1 true/false
+// null => standalone value,null=>empty
+// undefined => variable declared but no value has been assigned to it
+// symbol => unique
+// object
+
+console.log(typeof "hunbal");
+console.log(typeof 18);
+console.log(typeof null)  //object
+console.log(typeof undefined); //undefined
