@@ -1,0 +1,48 @@
+// Javascript is dynamically typed language because in Javascript,
+// we do not explicitly define the type of variable, it is determined
+// at runtime of program
+
+// Primitive data types
+
+// 7 => String, Number, Boolean, Null, Undefined, Symbol
+// BigInt
+
+const isLoggedIn = false
+const outsideTemp = null
+let userEmail
+
+const id = Symbol('id')
+const anotherId = Symbol('id')
+
+console.log(id==anotherId);
+
+const bigNumber = 546631851005166n
+
+// Non-primitive(Reference type)
+
+// Arrays, Objects, Function
+
+const names = ["Ali", "Ahmed", "John"];
+
+let myObj = {
+    name: "hunbal",
+    age: 21,
+}
+
+const myFunction = function(){
+    console.log("hello world");
+}
+
+// In JS typeof is an operator used to check the data type of a variable or value
+
+console.log(typeof false)
+console.log(typeof bigNumber)
+console.log(typeof userEmail)
+console.log(typeof null)  //Result = object, (Javascript bug)
+
+console.log(typeof myFunction)  // Function object
+console.log(typeof myObj)
+console.log(typeof names)
+
+
+// Non primitive data types mainly return "object", when checked with typeof
