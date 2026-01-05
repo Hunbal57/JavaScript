@@ -1,0 +1,45 @@
+const name = "Hunbal"
+const age = 21;
+
+console.log(name + age)  // string concatanation
+
+// String interpolation
+
+console.log(`Hello, my name is ${name} and my age is ${age}`);
+
+const myName = new String("hunbal-khan-") 
+
+// Methods related to strings
+
+console.log(myName[0]);  // zeroth key access
+// console.log(myName.__proto__);
+
+console.log(myName.length);
+console.log(myName.toUpperCase());
+console.log(myName.charAt(2));
+console.log(myName.indexOf('u'));
+
+const newString = myName.substring(0,4)   // Substring divides a string, Last value i.e 6 is not included, index
+console.log(newString);
+
+const newStringTwo = myName.slice(-8,7)   //Negative values can be used
+console.log(newStringTwo)
+
+const newStringThree = "     hunbal    "
+console.log(newStringThree);
+console.log(newStringThree.trim());  // removes the starting and ending spaces
+
+console.log(myName.replace("-"," ")); // replaces part of a string with another value
+
+console.log(myName.includes('hk'));
+
+const newStringFour = myName.split("-");  //split(separator)
+console.log(newStringFour)
+console.log(newStringFour[0])
+
+let str1 = "Cats are the best"
+console.log(str1.endsWith('best'));
+
+// console.log(str1.padEnd(20,"!"))
+// console.log(str1.padStart(24,"#"))
+// console.log(myName.lastIndexOf("-"))
