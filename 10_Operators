@@ -1,0 +1,39 @@
+// let a = 5
+// let b = 3
+
+// Arithmetic operators
+// console.log("a + b = ", a+b);
+// console.log("a % b = ", a%b);
+// console.log("a ** b = ", a**b);
+
+// Unary operators
+// console.log(a--);
+// console.log(a);
+
+// Assignment operators
+// console.log(a+=4); //a=a+4
+// console.log(a-=4); //a=a-4
+// console.log(a*=4); //a=a*4
+// console.log(a/=4); //a=a/4
+// console.log(a%=2); //a=a%2
+
+// Comparison-operators
+// == Equal to
+// ===,Equal to & Type,strict-version
+// !=,Not equal to
+// !==,Not equal to & Type
+
+// console.log(5!=2); //1
+
+// let c = 13
+// let d = 19
+// console.log(c===d);
+// console.log(c<=d);
+
+// Logical Operators
+
+// let cond1 = c>d
+// let cond2 = 19>13
+// console.log(cond1 || cond2);
+// console.log(!(c<d));
+// console.log(!(c==d));
