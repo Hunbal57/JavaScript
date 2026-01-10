@@ -30,15 +30,18 @@ console.log(newStringThree);
 console.log(newStringThree.trim());  // removes the starting and ending spaces
 
 console.log(myName.replace("-"," ")); // replaces part of a string with another value
+console.log(myName.replaceAll("-"," "));
 
-console.log(myName.includes('hk'));
+console.log(myName.includes('hk')); // True or False
+
+// To convert string to an array, use .split()
 
 const newStringFour = myName.split("-");  //split(separator)
 console.log(newStringFour)
 console.log(newStringFour[0])
 
 let str1 = "Cats are the best"
-console.log(str1.endsWith('best'));
+console.log(str1.endsWith('best')); // True
 
 // console.log(str1.padEnd(20,"!"))
 // console.log(str1.padStart(24,"#"))
