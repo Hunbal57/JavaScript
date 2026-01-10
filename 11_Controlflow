@@ -1,0 +1,97 @@
+// Control Flow
+// to implement some condition in the code
+
+//If-else statements
+
+// let number = 15
+// if(number%2==0){
+//     console.log("the number is even"); 
+// }
+// else{
+//     console.log("the number is odd");
+// }
+
+// const isLoggedIn = true
+// // if(isLoggedIn){
+// //    console.log("Successfully Loged In");
+// // }
+// // else{
+// //    console.log("Please Login"); 
+// // }
+
+// Strictly checking
+// if(2==="2"){
+//    console.log("true")
+// }
+// if("ali"==="ali"){
+//    console.log("code executed")
+// }
+
+
+// If-else ladder
+
+// marks>=85 => Grade A
+// marks>=70 => Grade B
+// marks>=50 => Grade C
+// marks<50 =>  Grade D
+
+//  let marks = 38;
+//  if(marks>=85 && marks<=100){
+//     console.log("Grade-A");
+//  }
+//  else if(marks>=70 && marks<=85){
+//     console.log("Grade-B");  
+//  }
+//  else if(marks>=50 && marks<=70){
+//     console.log("Grade-C");
+//  }
+//  else if(marks>100){
+//    console.log("Invalid marks");
+//  }
+//  else{
+//     console.log("Grade-D");
+//  }
+
+
+
+// const score = 200
+// Local and global scope issue in javascript
+// if declared with 'var', it can be accessed outside its scope
+// if(score>100){
+//    let ability = "fly"
+//    console.log(`User power: ${ability}`)
+// }
+// console.log(`User power: ${ability}`)
+
+
+// const balance = 1500
+// if(balance>100) console.log("test"), console.log("test2")
+// don't prefer this, very unreadable
+
+// if(balance<500){
+//    console.log("less than 500")
+//    }
+//    else if(balance<700){
+//       console.log("less than 750")
+//    }
+//    else if(balance<900){
+//       console.log("less than 1000")
+//    }
+//    else{
+//       console.log(`Balance is ${balance}`)
+//    }
+
+
+// let userLoggedIn = true
+// let debitCard = false
+// let LoggedInFromGoogle = true
+// let LoggedInFromNumber = false
+
+
+// if(userLoggedIn && debitCard){
+//    console.log("Allowed to buy products")
+// }
+
+// if(LoggedInFromGoogle || LoggedInFromNumber){
+//    console.log("User Logged in")
+// }
