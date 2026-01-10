@@ -1,7 +1,7 @@
 const score = 400
 console.log(score);
 
-const balance = new Number(100)  // new Number(100) creates a Number object, not a primitive
+const balance = new Number(100)  // new Number(1) creates a Number object, not a primitive
 console.log(balance);
 
 
@@ -35,6 +35,7 @@ console.log(Math.floor(Math.random()*10) + 1);  //1-10
 // +1 = Shifts the range by 1 so now its between 1 and 11(but not including 11) 
 // 2.34 + 1 = 3.34
 
+// Math.floor((Math.random()*10)+1)
 
 
 // Another method:
