@@ -1,0 +1,44 @@
+const socialApps = ["Instagram","Facebook","Twitter"]
+const mesgApps = ["Whatsapp","Telegram","Messenger"]
+
+// merging two arrays
+
+socialApps.push(mesgApps)
+console.log(socialApps)
+console.log(socialApps[3][2]);
+
+// concatenate()
+// const allApps = socialApps.concat(mesgApps)
+// console.log(allApps)
+
+// const allAppsAre = [...socialApps,...mesgApps]
+// console.log(allAppsAre)
+
+
+// let someArray = [1, 2, 3, [4, 5], 6, 7, [8, 9, [10, 11]]]
+// let someanotherArray = someArray.flat(Infinity)
+// console.log(someanotherArray)
+
+console.log(Array.isArray("John"))   
+// Array.isArray() checks whether the given value is an array or not.
+// Array.isArray([1, 2, 3])   // true
+// Array.isArray([]) // true
+
+console.log(Array.from("John"))
+// Array.from() converts iterable or array-like objects into an array.
+// An iterable is something that JavaScript can go through one by one (step-by-step).
+// If you can use it in a for...of loop, it is iterable.
+// string, array, set
+
+console.log(Array.from({name: "john"}))
+// This is a normal object, not iterable
+// Array.from() cannot convert a plain object directly into an array
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1,score2,score3));
+
+
+
