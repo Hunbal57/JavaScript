@@ -1,0 +1,53 @@
+// Singleton
+// Object.create   // creating object through constructor method
+
+// object literals
+
+const mys1 = Symbol("key1")    // using symbol as a key of an object
+
+const JsUser = {
+    name: "John",
+    [mys1]: "mykey1",
+    age: 18,
+    location: "New York",
+    email: "john45@gmail.com",
+    isLoggedIn: true,
+    lastLoginDays: ["Monday", "Saturday"],
+    // Functions can also defined inside an object as a key
+    // greeting() {
+    //     console.log("Hello JS User");
+    // }
+}
+
+// accessing any key of object, two methods
+
+console.log(JsUser.location)
+console.log(JsUser["location"])
+
+// console.log(JsUser.mys1)   //mykey1
+// console.log(typeof JsUser.mys1)  //string
+
+console.log(JsUser[mys1])
+
+// To change a specific value
+JsUser.email = "john@chatgpt.com"
+console.log(JsUser["email"]);
+
+// Object.freeze(JsUser)  // locks the object keys, so changes cant be made after it
+// JsUser.email = "john@yahoo.com"
+// console.log(JsUser);   // No changes will reflect here in the object
+
+JsUser.greeting = function(){
+    console.log("Hello JS User");
+}
+
+JsUser.greeting();  // Hello JS User
+// console.log(JsUser.greeting())  Just one thing I want to add here is : undefined is coming in this case because you console.log such a function which is not returning anything.
+// To execute the function you need not to write console.log
+// console.log(JsUser.greeting);  // [Function (anonymous)], Funct- is not executed, only its reference is given
+
+
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS User, ${this.name}`);   //this=>properties inside that object
+}
+JsUser.greetingTwo(); 
