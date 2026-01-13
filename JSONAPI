@@ -1,0 +1,57 @@
+// Object destructure
+// Object destructuring in js is a clean way to extract values from an object into variables
+// variables names must match the object keys
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor  
+
+const {courseInstructor} = course   // hamein kahan se value extract krni h, matlb kis object se value extract krni hai
+
+console.log(courseInstructor)
+
+// Renaming variables
+// const {courseInstructor: instructor} = course
+// console.log(instructor)
+
+
+// const myProfile = {
+// name: "Hunbal",
+// age: 18,
+// userGmail: "hunbalkhan9@gmail.com"
+// }
+
+// //object destructuring
+
+// const {name} = myProfile
+// console.log(name)   //Hunbal
+
+// const {name: myName} = myProfile
+
+
+// This portion is related to Reactjs,
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "hitesh")
+
+// Json => Javascript object notation
+// Json object => Keys & values both are written in string-form
+// Used for Data transfer(API,storage)
+
+// {
+//     "name": "ali",
+//     "courseName": "js in hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
