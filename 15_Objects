@@ -1,0 +1,75 @@
+// Objects created using literals are non singleton & with constructor
+// method are singleton
+// const user = new Object() // singleton obj
+const user = {} // non singleton obj
+
+user.id = 246104
+user.name = "David"
+user.isLoggedIn = false
+
+console.log(user)
+
+const regularUser = {
+    email: "user@google.com",
+    userName: {
+        fullName: {
+            firstName: "David",
+            lastName: "Joe"
+        }
+    }
+}
+
+console.log(regularUser.userName.fullName.firstName)
+
+// Merging two objects
+
+const obj1 = {
+    1: 'a',
+    2: 'b'
+}
+const obj2 = {
+    3: 'c',
+    4: 'd'
+}
+const obj4 = {
+    5: 'e',
+    6: 'f'
+}
+
+// const obj3 = {obj1,obj2}
+// const obj3 = Object.assign({}, obj1, obj2, obj4)
+
+const obj3 = {...obj1,...obj2,...obj4}  //... => spread operator
+console.log(obj3)
+
+// = array1.concat(array2)
+// = Object.assign({},obj1,obj2)
+// = [...array1,...array2]
+// = {...obj1,...obj2}
+
+// array of objects, database
+const users =[
+    {
+        user: 1,
+        email: 'h@gmail.com'
+    },
+    {
+        user: 2,
+        email: 'k@gmail.com'
+    },
+    {
+        user: 3,
+        email: 'r@gmail.com'
+    }
+]
+console.log(users[1].email)
+
+
+console.log(Object.keys(user)) // to get all keys in the form of array
+console.log(Object.values(user))  // to get values
+console.log(Object.keys(user).length)
+console.log(Object.entries(user))
+
+// to check whether a specific property is existing or not in object
+
+console.log(user.hasOwnProperty('isLoggedIn'))  // true
