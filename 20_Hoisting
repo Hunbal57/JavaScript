@@ -1,0 +1,34 @@
+// Hoisting is js default behavior of moving declarations at the top of their
+// scope before code execution 
+// only declarations are hoisted...
+
+// var a
+
+// console.log(a)
+
+// var a = 10    // undefined,
+// let a = 4   // Hoisting works for let and const, but accessing them before declaration causes a ReferenceError due to TDZ
+
+// Why JS do this for let and const?
+// to prevent bugs, to make code predictable and avoid accidental access before declaration
+
+// Following function will run successfully due to javascript hoisting
+
+// greet()
+// function greet(){
+//     console.log("Good morning")
+// }
+
+// Function Expressions
+
+// message()
+// const message = function(){
+//     console.log("Good morning")
+// }
+
+// Arrow Function
+
+// msg()
+// const msg = () => {
+//     console.log("Good evening")
+// }
