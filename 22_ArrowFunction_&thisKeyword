@@ -1,0 +1,74 @@
+const user = {
+    username: "hunbal",
+    price: 999,
+
+    welcomeMessage: function(){
+        console.log(`${this.username}, welcome to website`)
+        console.log(this)
+    },
+    // Arrow function
+    greeting: () => {
+        console.log(`${this.price}, this is the price`)
+    }
+}
+
+// this => refers to the current context 
+
+// user.welcomeMessage()
+// user.greeting()
+
+// user.username = "ahmed"  // context changed
+// user.welcomeMessage()
+
+
+
+
+// console.log(this)  //{}, current context is empty...refers to node environment
+// Global object in browser is window object
+
+
+// function func(){
+//     let username = "Ali"
+//     console.log(this.username)  // this. context is not working inside a normal function, works inside object
+//                                // this does NOT refer to local variables inside a normal function.
+// }
+
+// func()   // undefined
+
+// const func = function(){
+//     let username = "Ali"
+//     console.log(this.username)
+// }
+// func()
+
+// Arrow Function: In Javascript, an arrow function is a shorten way to write function using =>
+
+// const myfunc = () => {
+//     let username = "Ali"
+//     console.log(this.username)
+// }
+
+// myfunc()
+
+// const addTwo = (num1, num2) => {
+//     return num1+num2
+// }
+
+// console.log(addTwo(11,3))
+
+// Arrow function in used as implicit return
+// explicit return => when we use 'return' keyword
+
+// const addThree = (num1, num2, num3) => num1+num2+num3
+// const addThree = (num1, num2, num3) => (num1+num2+num3)
+// console.log(addThree(11,3,23))
+
+// suppose we want to return an object
+
+// const addThree = (num1, num2, num3) => ({username: "hunbal"})
+
+// console.log(addThree(11,3,23))
+
+
+// const myArray = [2,5,3,7,8]
+// myArray.forEach()
