@@ -1,0 +1,62 @@
+"use strict"
+// this keyword is global space will always have the value of global object
+// global object can different, depending upon the runtime environment of javascript
+// in case of browser, the global object is the window object
+
+console.log(this)
+
+// this keyword behaves differentlly inside a function, depends on strict and non strict mode
+// inside the function, the valyue of this keyword will always be undefined
+// strict mode = undefined
+// non strict mode => this substitution = replaced by global object
+// this keyword also depends on how the function is called
+// In most of the cases, the value of this is determined by how the function is called during runtime binding
+
+function func(){
+    console.log(this)
+}
+
+func()
+
+// this inside a object's method
+
+const myObj = {
+    a: 10,
+    x: function(){
+        console.log(this)
+    }
+}
+
+myObj.x()  // the value of this keyword in this case is the object
+
+// this inside arrow function
+// Arrow Functions don't have their own this context (it retains the value of the enclosing
+// lexical context), means where this function is lexically enclosed
+
+// lexical means how it is written in the code,
+// means how this below object is lexically present inside the code
+
+const myObj2 = {
+    a: 20,
+    y: () => {
+    console.log(this)
+    }
+}
+
+myObj2.y()
+
+// Now in the below code, the arrow function is not the method of this object
+
+const myObj3 = {
+    a: 30,
+    x: function()
+    // console.log(this)
+     {
+        const y = () => {
+            console.log(this)
+        }
+        y()
+    }
+}
+
+myObj3.x()
