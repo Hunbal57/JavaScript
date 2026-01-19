@@ -1,0 +1,24 @@
+// Immediatly Invoked Function Expression (IIFE)
+
+// A Function that is defined & executed immediately after it is created
+
+
+(function func(){
+    // Named IIFE
+    console.log("Database connected")
+})();
+
+// ()() => function definition & execution
+
+( () => {
+    console.log("Database connected 2")
+} )();
+
+// (function chai(){
+//     console.log("Javascript is a good language");
+// }) ();
+
+
+ ( (name) => {
+    console.log(`Python is most advanced programming language ${name}`)
+  }) ("Ali")
